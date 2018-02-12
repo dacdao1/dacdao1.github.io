@@ -1,7 +1,7 @@
 
 /* only small desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
-    
+
 }
 
 /* tablets */
@@ -17,10 +17,10 @@
     .item-boxes h4{
         font-size: 18px;
     }
-    #features .show-box img{
+    #consumeroverview .show-box img{
         display: none;
     }
-    .pricing-table .pricing-details ul li{
+    .about-table .about-details ul li{
         font-size: 12px;
     }
     .counters .facts-item .fact-count h4{
@@ -35,7 +35,7 @@
     .meta-tags span i{
         margin-right: 0px;
     }
-    #blog .blog-item-text h3{
+    #news .news-item-text h3{
         font-size: 14px;
         line-height: 20px;
     }
@@ -54,10 +54,10 @@
         font-size: 18px;
         line-height: 30px;
     }
-    #features .show-box img{
+    #consumeroverview .show-box img{
         display: none;
     }
-    #features .box-item .text h4{
+    #consumeroverview .box-item .text h4{
         font-size: 14px;
     }
     .controls{
@@ -70,7 +70,7 @@
     .video-promo .video-promo-content h2{
         font-size: 22px;
     }
-    .pricing-table{
+    .about-table{
         margin-bottom: 15px;
     }
     .counters .facts-item{

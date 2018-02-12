@@ -14,45 +14,8 @@ $letter-spacing: 0px;
 //Current Preset Declareation
  $preset:  $green;
  $preset-drack:  $green-drack;
- 
-	/*
-* Mate - Bootstrap 4 Template
-* Build Date: December 2017
-* Last updated: December 2017
-* Version: 1.0
-* Author: UIdeck
-* Copyright (C) 2018 UIdeck
-*/
 
-/* ------------------------------------- */
-/* TABLE OF CONTENTS
-/* -------------------------------------
-  1. IMPORT GOOGLE FONTS
-  2. GENERAL
-    -2.1 SECTION TITLE
-    -2.2 BUTTONS
-    -2.3 SOCIAL ICON
-    -2.4 PRE LOADER
-    -2.5 SCROLL TO UP
-  3. HERO AREA 
-  4. NAVBAR
-  5. SERVICES SECTION
-  6. FEATURES SECTION
-  7. VIDEO PROMO SECTION
-  8. PORTFOLIO SECTION
-  9. PRICING TABLE 
-  10. COUNTER SECTION
-  11. TESTIMONIAL AREA
-  12. TEAM SECTION
-  13. BLOG SECTION
-  14. CONTACT SECTION
-  15. FOOTER SECTION
-    -15.1 COMING SOON PAGE
-  ------------------------------------- */
 
-/* ==========================================================================
-   1. IMPORT GOOGLE FONTS
-   ========================================================================== */
 	@import url('https://fonts.googleapis.com/css?family=Poppins:400,700');
 
  /* ==========================================================================
@@ -84,7 +47,7 @@ $letter-spacing: 0px;
 	}
 	h1,h2,h3,h4,h5{
 		font-family: 'Poppins', sans-serif;
-		font-size: 40px;	
+		font-size: 40px;
 		font-weight: 700;
 		letter-spacing: 1px;
 	}
@@ -317,7 +280,7 @@ $letter-spacing: 0px;
 	  opacity: 0.6;
 	  position: absolute;
 	  top: 0;
-	  left: 0;	  
+	  left: 0;
 	  -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
 	  animation: sk-bounce 2.0s infinite ease-in-out;
 	}
@@ -332,17 +295,17 @@ $letter-spacing: 0px;
 	}
 
 	@keyframes sk-bounce {
-	  0%, 100% { 
+	  0%, 100% {
 	    transform: scale(0.0);
 	    -webkit-transform: scale(0.0);
-	  } 50% { 
+	  } 50% {
 	    transform: scale(1.0);
 	    -webkit-transform: scale(1.0);
 	  }
 	}
 
-	/* ========================================================================== 
-  -2.5 Scroll To Up 
+	/* ==========================================================================
+  -2.5 Scroll To Up
    ========================================================================== */
 	.back-to-top {
 	  display: none;
@@ -380,14 +343,14 @@ $letter-spacing: 0px;
 			position: absolute;
 			width: 100%;
 			height: 100%;
-			top: 0px;			
+			top: 0px;
 			left: 0px;
 			background: $preset;
 			opacity: 0.9;
 		}
 		.contents{
 			padding: 200px 0 130px;
-			h1{	
+			h1{
 				color: #fff;
 				font-size: 42px;
 				font-weight: 700;
@@ -468,8 +431,8 @@ $letter-spacing: 0px;
 	  -moz-transition: all 0.3s ease-in-out;
 	  transition: all 0.3s ease-in-out;
 	}
-	.navbar-expand-lg .navbar-nav li a:hover, 
-	.navbar-expand-lg .navbar-nav li .active > a, 
+	.navbar-expand-lg .navbar-nav li a:hover,
+	.navbar-expand-lg .navbar-nav li .active > a,
 	.navbar-expand-lg .navbar-nav li a:focus{
 	  color: $preset;
 	}
@@ -518,7 +481,7 @@ $letter-spacing: 0px;
 	  #mobile-menu {
 	    display:none;
 	  }
-	  
+
 	  .slicknav_menu {
 	    display:block;
 	  }
@@ -577,9 +540,9 @@ $letter-spacing: 0px;
    	}
 
  /* ==========================================================================
-  6. Features Section Style
+  6. consumeroverview Section Style
    ========================================================================== */
-	#features{
+	#consumeroverview{
 		background: url(../img/bg1.jpg) fixed no-repeat;
 		background-size: cover;
 		color: #fff;
@@ -658,7 +621,7 @@ $letter-spacing: 0px;
 	   	background: #61D2B4;
 		color: #fff;
 		overflow: hidden;
-		position: relative;	
+		position: relative;
 		.video-promo-content{
 			color: #fff;
 			h2{
@@ -698,27 +661,27 @@ $letter-spacing: 0px;
 		opacity: 0.9;
 		filter: alpha(opacity=90);
 	}
-	
+
 
  /* ==========================================================================
-  8. Portfolio Section
+  8. retailoverview Section
    ========================================================================== */
-	#portfolios{
+	#retailoverview{
 	  .mix{
 	    padding: 10px;
 	  }
-	  .portfolio-item{
+	  .retailoverview-item{
 		.shot-item{
 			margin: 0px;
 		}
 	  }
 	}
-	#portfolio .mix{
+	#retailoverview .mix{
 	  display: none;
 	}
 	.controls{
 	  text-align: center;
-	  padding: 0px 0px 20px;  
+	  padding: 0px 0px 20px;
 	  .active{
 	    color: $preset!important;
 	    border-color: $preset;
@@ -732,7 +695,7 @@ $letter-spacing: 0px;
 	  	cursor: pointer;
 	  }
 	}
-	.portfolio-img {
+	.retailoverview-img {
 	    overflow: hidden;
 	    display: block;
 	    position: relative;
@@ -743,8 +706,8 @@ $letter-spacing: 0px;
 	.shot-item{
 		margin-right: 15px;
 		border-radius: 4px;
-		background: #fff;   
-		position: relative;		
+		background: #fff;
+		position: relative;
 		img{
 			width: 100%;
 		}
@@ -795,9 +758,9 @@ $letter-spacing: 0px;
 
 
 	 /* ==========================================================================
-	9. Pricing Table
+	9. app Table
 	========================================================================== */
-    .pricing-table{
+    .app-table{
     		padding: 0px 0px 40px 0px;
     		margin: 0 auto;
 			margin-bottom: 5px;
@@ -809,9 +772,9 @@ $letter-spacing: 0px;
 			-moz-transition: all 0.3s;
 			transition: all 0.3s;
 			&:hover{
-				box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);			
-			}	
-			.pricing-details{
+				box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+			}
+			.app-details{
 				h2{
 					font-size: 26px;
 				    font-weight: 700;
@@ -858,7 +821,7 @@ $letter-spacing: 0px;
 					color: #fff;
 				}
 			}
-			
+
 			.fact-count{
 				h3{
 					font-size: 35px;
@@ -875,16 +838,16 @@ $letter-spacing: 0px;
    }
 
 /* ==========================================================================
-11. Testimonial Section Style
- ========================================================================== */  
-	#testimonial {
-		background: url(../img/testimonial-bg.jpg) fixed no-repeat;
+11. about Section Style
+ ========================================================================== */
+	#about {
+		background: url(../img/about-bg.jpg) fixed no-repeat;
 		background-size: cover;
 		color: #fff;
 		overflow: hidden;
-		position: relative;	
-	}	
-	.testimonial-item{
+		position: relative;
+	}
+	.about-item{
 		text-align: center;
 		img {
 		  	width:80px;
@@ -892,7 +855,7 @@ $letter-spacing: 0px;
 			height:80px;
 			border-radius: 50%;
 		}
-		.testimonial-text{
+		.about-text{
 			 h3 {
 			  	font-size: 15px;
 				font-weight: 700;
@@ -901,7 +864,7 @@ $letter-spacing: 0px;
 				font-size: 14px;
 				color: #999;
 			}
-			p {			  	
+			p {
 			  	font-size: 14px;
 				font-weight: 400;
 			  	padding: 36px 10px 30px 10px;
@@ -998,29 +961,29 @@ $letter-spacing: 0px;
 
 
 /* ==========================================================================
-  13. Blog 
+  13. news
    ========================================================================== */
-  #blog{
-    .blog-item-wrapper{
+  #news{
+    .news-item-wrapper{
       background: #fff;
-      border-radius: 0px;     
+      border-radius: 0px;
       -webkit-transition: transform 0.2s linear, -webkit-box-shadow 0.2s linear;
       -moz-transition: transform 0.2s linear, -moz-box-shadow 0.2s linear;
       transition: transform 0.2s linear, box-shadow 0.2s linear;
     }
-    .blog-item-wrapper:hover .blog-item-img:before{
+    .news-item-wrapper:hover .news-item-img:before{
     	opacity: 1;
     	height: 100%;
     	width: 100%;
     }
-    .blog-item-img{
-      position: relative; 
+    .news-item-img{
+      position: relative;
       img{
         width: 100%;
       }
     }
-    .blog-item-text{
-       padding: 20px 0;      
+    .news-item-text{
+       padding: 20px 0;
       h3{
         line-height: 26px;
         font-size: 18px;
@@ -1035,7 +998,7 @@ $letter-spacing: 0px;
       }
       p{
       		line-height: 25px; margin-bottom: 20px;
-      	}    
+      	}
       }
   }
   .meta-tags{
@@ -1055,7 +1018,7 @@ $letter-spacing: 0px;
     }
   }
 
- 
+
 /* ==========================================================================
   14. Contact Us
   ========================================================================== */
@@ -1075,7 +1038,7 @@ $letter-spacing: 0px;
 		background: #343a40;
 	    color: #fff;
 	    position: relative;
-	} 
+	}
   .form-control{
 	 	width: 100%;
 		margin-bottom: 10px;
@@ -1099,7 +1062,7 @@ $letter-spacing: 0px;
 	.btn.disabled, .btn:disabled{
 		opacity: 1;
 	}
-	
+
 	.text-danger{
 		font-size: 14px;
 		margin-top: 10px;
@@ -1109,7 +1072,7 @@ $letter-spacing: 0px;
 			color: #d9534f;
 		}
 	}
- 
+
 /* ==========================================================================
 15. Footer Style
  ========================================================================== */
@@ -1146,8 +1109,3 @@ p{
   }
 }
 }
-
-
-
-
-
