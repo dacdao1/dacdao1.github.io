@@ -2,6 +2,34 @@
 
   "use strict";
 
+  /// modal video player
+
+  var $videoSrc;
+  $('.video-btn').click(function() {
+      $videoSrc = $(this).data( "src" );
+  });
+  console.log($videoSrc);
+
+
+
+  // when the modal is opened autoplay it
+  $('#myModal').on('shown.bs.modal', function (e) {
+
+  // set the video src to autoplay and not to show related video. Youtube related video is like a box of chocolates... you never know what you're gonna get
+  $("#video").attr('src',$videoSrc + "?modestbranding=1&rel=0&iv_load_policy=3&fs=0&disablekb=1&showinfo=0&autoplay=1&controls=0");
+
+  // autoplay=0&amp;modestbranding=1&amp;showinfo=0;controls=0" );
+  })
+
+
+
+  // stop playing the youtube video when I close the modal
+  $('#myModal').on('hide.bs.modal', function (e) {
+      // a poor man's stop video
+      $("#video").attr('src',$videoSrc);
+  })
+
+
   // Sticky Nav
     $(window).on('scroll', function() {
         if ($(window).scrollTop() > 200) {

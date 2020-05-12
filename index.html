@@ -10,7 +10,10 @@
     <title>Freeing Returns</title>
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/line-icons.css">
     <link rel="stylesheet" href="css/owl.carousel.css">
@@ -25,7 +28,8 @@
   </head>
   <body>
     <!-- Header Section Start -->
-    <header id="hero-area" data-stellar-background-ratio="0.5">
+    <header id="hero-area" data-stellar-background-ratio=".5">
+
       <!-- Navbar Start -->
       <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar indigo">
         <div class="container">
@@ -99,12 +103,46 @@
       <!-- Navbar End -->
 
       <div class="container">
-        <div class="row justify-content-md-center">
-          <div class="col-md-10">
-            <div class="contents text-center">
+        <div class="row">
+          <div class="col-lg-20">
+            <div class="contents">
               <h1 class="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="0.3s">Freeing Return</h1>
+
               <p class="lead  wow fadeIn" data-wow-duration="1000ms" data-wow-delay="400ms">Free Yourself Today </p>
-              <a href="#" class="btn btn-common wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="400ms"><img class="img-fulid" src="img/download.png" alt=""></a>
+
+              <button type="button" class="btn btn-success video-btn wow fadeInUp" data-toggle="modal" data-src="https://www.youtube.com/embed/uHf7bWxUNtY" data-target="#myModal" data-wow-duration="1000ms" data-wow-delay="400ms">
+  Watch full video
+</button>
+
+
+<!--
+the beginning of modal config
+ -->
+            <!-- Modal pop config -->
+              <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+
+
+                    <div class="modal-body">
+
+                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                      <!-- 16:9 aspect ratio -->
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+              </div>
+
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+<!--
+the end of modal config
+ -->
 
             </div>
           </div>
@@ -145,8 +183,8 @@
               <div class="icon">
                 <i class="lnr lnr-hand"></i>
               </div>
-              <h4>Stop Fraud</h4>
-              <p>The Fraud Exposure Engine (FEE), is designed to look at returns data for trends and patterns indicating potentially fraudulent or abusive returns, resulting in a more comprehensive fraud detection experience.</p>
+              <h4>Pre-Schedule Your Return</h4>
+              <p>Use your phone to process your return and then book your drop-off time with the store.  Your return is pre-scheduled and you skip the lines to drop off your items or schedule to have them picked up from a location you designate.</p>
             </div>
           </div>
         </div>
@@ -162,7 +200,7 @@
           <h2 class="section-title wow fadeInDown">Retail Overview</h2>
         </div>
         <div class="row">
-          <div class="col-lg-8 col-md-12 col-xs-12">
+          <div class="col-lg-12 col-md-12 col-xs-12">
             <div class="container">
               <div class="row">
                  <div class="col-lg-6 col-sm-6 col-xs-12 box-item">
@@ -179,8 +217,8 @@
                       <i class="lnr lnr-smile"></i>
                     </span>
                     <div class="text wow fadeInDown" data-wow-delay="0.4s">
-                      <h4>Boost Brand Loyalty</h4>
-                      <p>Freeing Returns allows you to personalize your returns policies to drive customer loyalty. If desired, you can also maintain your current returns policies.</p>
+                      <h4>Reward Your Loyal Customers</h4>
+                      <p>Freeing Returns allows you to offer “personalized returns” to your most loyal customers.  Our platform will give your customers a unique experience when returning merchandise.  Global returns policies stay enforce so that you can personally reward customers for their loyalty through hassle-free returns processing.</p>
                     </div>
                   </div>
                   <div class="col-lg-6 col-sm-6 col-xs-12 box-item">
@@ -316,7 +354,7 @@
     <section id="team" class="section">
       <div class="container">
         <div class="section-header">
-          <h2 class="section-title">Our Team</h2>
+          <h2 class="section-title">Management Team</h2>
         </div>
         <div class="row">
           <div class="col-md-4 col-sm-6">
@@ -336,7 +374,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 col-sm-6">
+          <div class="col-md-4 offset-md-4 col-sm-6">
             <div class="single-team wow bounceInDown" data-wow-duration="2000ms" data-wow-delay="300ms">
               <img src="img/team/team2.jpg" alt="">
               <div class="team-details">
@@ -353,13 +391,19 @@
               </div>
             </div>
           </div>
+        </div>
+
+
+        <div class="section-header">
+          <h2 class="section-title">Advisor Board</h2>
+        </div>
+        <div class="row">
           <div class="col-md-4 col-sm-6">
-            <div class="single-team wow bounceInDown" data-wow-duration="2000ms" data-wow-delay="400ms">
-              <img src="img/team/team3.jpg" alt="">
+            <div class="single-team wow bounceInDown" data-wow-duration="2000ms" data-wow-delay="200ms">
+              <img src="img/team/ernie.jpg" alt="">
               <div class="team-details">
                 <div class="team-inner">
-                  <h4 class="team-title">Lisette Rice</h4>
-                  <p>COO</p>
+                  <h4 class="team-title">Ernie Deyle</h4>
                   <ul class="social-list">
                     <li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
                     <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -370,7 +414,40 @@
               </div>
             </div>
           </div>
+          <div class="col-md-4 col-sm-6 ">
+            <div class="single-team wow bounceInDown" data-wow-duration="2000ms" data-wow-delay="300ms">
+              <img src="img/team/bernie.jpg" alt="">
+              <div class="team-details">
+                <div class="team-inner">
+                  <h4 class="team-title">Bernie Dixon</h4>
 
+                  <ul class="social-list">
+                    <li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li class="google-plus"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    <li class="linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 ">
+            <div class="single-team wow bounceInDown" data-wow-duration="2000ms" data-wow-delay="300ms">
+              <img src="img/team/susan.jpg" alt="">
+              <div class="team-details">
+                <div class="team-inner">
+                  <h4 class="team-title">Susan O'Dwyer</h4>
+
+                  <ul class="social-list">
+                    <li class="facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li class="twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li class="google-plus"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                    <li class="linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -477,33 +554,26 @@
     <!-- Footer Section Start -->
     <footer>
       <div class="container">
-        <div class="row">
+        <div class="row justify-content-md-center">
           <!-- Footer Links -->
-          <div class="col-lg-6 col-sm-6 col-xs-12">
-            <ul class="footer-links">
-              <li>
-                <a href="#hero-area">Homepage</a>
-              </li>
-              <li>
-                <a href="#consumeroverview">Consumer Overview</a>
-              </li>
-              <li>
-                <a href="#about">About Us</a>
-              </li>
-              <li>
-                <a href="#contact">Contact</a>
-              </li>
-            </ul>
+          <div class="col-md-auto">
+
+
+
+
+              <p style="color:white; ">Copyright © 2020 Freeing Returns</p>
+
+
+
+
+
           </div>
         </div>
       </div>
     </footer>
     <!-- Footer Section End -->
 
-    <!-- Go To Top Link -->
-    <a href="#" class="back-to-top">
-      <i class="lnr lnr-arrow-up"></i>
-    </a>
+    <!-- spinner loader -->
 
     <div id="loader">
       <div class="spinner">

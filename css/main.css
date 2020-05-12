@@ -367,6 +367,7 @@ button:focus {
   background-size: cover;
   overflow: hidden;
   position: relative;
+
 }
 
 #hero-area .overlay {
@@ -380,7 +381,7 @@ button:focus {
 }
 
 #hero-area .contents {
-  padding: 200px 0 250px;
+  padding: 400px 0 100px;
 }
 
 #hero-area .contents h1 {
@@ -420,6 +421,27 @@ button:focus {
   color: #0AA8ED;
 }
 
+.modal-dialog {
+      max-width: 800px;
+      margin: 100px auto;
+  }
+
+
+
+.modal-body {
+  position:relative;
+  padding:0px;
+}
+.close {
+  position:absolute;
+  right:-30px;
+  top:0;
+  z-index:999;
+  font-size:2rem;
+  font-weight: normal;
+  color:#fff;
+  opacity:1;
+}
 /* ==========================================================================
    4. Navbar Style
    ========================================================================== */
@@ -610,6 +632,7 @@ button:focus {
 
 #features .section-title {
   color: #fff;
+  padding-top: -5px;
 }
 
 #features .section-subtitle {
@@ -627,7 +650,7 @@ button:focus {
 }
 
 #features .box-item {
-  padding: 15px 0;
+  padding: 15px 0 15px;
 }
 
 #features .box-item .icon {
