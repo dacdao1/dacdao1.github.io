@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    var delay = 100; // milliseconds
+    var delay = 5000; // milliseconds
     var cookie_expire = 0; // days
 
     var cookie = localStorage.getItem("list-builder");
