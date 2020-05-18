@@ -27,20 +27,28 @@
 
   </head>
   <body>
-    <!-- Header Section Start -->
+
+
+    <!-- Header Section Start for all device -->
     <header id="hero-area" data-stellar-background-ratio=".5">
+
+
 
       <!-- Navbar Start -->
       <nav class="navbar navbar-expand-lg fixed-top scrolling-navbar indigo">
         <div class="container">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
-            <a href="index.html" class="navbar-brand"><img class="img-fulid" src="img/logo.png" alt=""></a>
+            <a href="index.html" class="navbar-brand"><img class="img-fulid" src="img/logo.png" alt="Freeing Returns main logo" style="margin-left: -60px;"></a>
+
+            <a href="index.html" class="navbar-brand d-block d-sm-none"><img class="img-fulid" src="img/logo.png" alt="Freeing Returns main logo" style="margin-left: 10px;"></a>
+
+
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
               <i class="lnr lnr-menu"></i>
             </button>
           </div>
-          <div class="collapse navbar-collapse" id="main-navbar">
+          <div class="collapse navbar-collapse" id="main-navbar" style="margin-right:-65px;">
             <ul class="navbar-nav mr-auto w-100 justify-content-end">
               <li class="nav-item">
                 <a class="nav-link page-scroll" href="#hero-area">Home</a>
@@ -51,12 +59,14 @@
               <li class="nav-item">
                 <a class="nav-link page-scroll" href="#features">Retail Overview</a>
               </li>
+
               <li class="nav-item">
-                <a class="nav-link page-scroll" href="#app">App</a>
+                <a class="nav-link page-scroll" href="#app">Why Choose Us?</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link page-scroll" href="#about">About</a>
               </li>
+
               <li class="nav-item">
                 <a class="nav-link page-scroll" href="#team">Team</a>
               </li>
@@ -64,7 +74,7 @@
                 <a class="nav-link page-scroll" href="#news">News</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link page-scroll" href="#contact">Contact</a>
+                <a class="nav-link page-scroll" href="#contact" style="border-style: solid;color: red;">Schedule a Demo</a>
               </li>
             </ul>
           </div>
@@ -81,12 +91,11 @@
             <li>
               <a class="page-scroll" href="#features">Retail Overview</a>
             </li>
+
             <li>
-              <a class="page-scroll" href="#app">App</a>
+              <a class="page-scroll" href="#whyUs">Why Choose Us?</a>
             </li>
-            <li>
-              <a class="page-scroll" href="#about">About</a>
-            </li>
+
             <li>
               <a class="page-scroll" href="#team">Team</a>
             </li>
@@ -94,7 +103,7 @@
               <a class="page-scroll" href="#news">News</a>
             </li>
             <li>
-              <a class="page-scroll" href="#contact">Contact</a>
+              <a class="page-scroll" href="#contact">Schedule a Demo</a>
             </li>
         </ul>
         <!-- Mobile Menu End -->
@@ -102,16 +111,19 @@
       </nav>
       <!-- Navbar End -->
 
-      <div class="container">
+
+<!-- modal and title for all device except mobile -->
+      <div class="container d-none d-sm-block">
+
         <div class="row">
-          <div class="col-lg-20">
+          <div class="col">
             <div class="contents">
               <h1 class="wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="0.3s">Freeing Return</h1>
 
               <p class="lead  wow fadeIn" data-wow-duration="1000ms" data-wow-delay="400ms">Free Yourself Today </p>
 
               <button type="button" class="btn btn-success video-btn wow fadeInUp" data-toggle="modal" data-src="https://www.youtube.com/embed/uHf7bWxUNtY" data-target="#myModal" data-wow-duration="1000ms" data-wow-delay="400ms">
-  Watch full video
+  Learn More
 </button>
 
 
@@ -129,6 +141,7 @@ the beginning of modal config
                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                       </button>
+
                       <!-- 16:9 aspect ratio -->
               <div class="embed-responsive embed-responsive-16by9">
                 <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
@@ -136,20 +149,48 @@ the beginning of modal config
 
 
                     </div>
-
+<div id="scheduleDemo">
+  <a href="#contact" class="demo-modal" data-dismiss="modal" style="border-style: solid;color: white; background-color: #0AA8ED;">Schedule a Demo</a>
+</div>
                   </div>
                 </div>
+
               </div>
 <!--
 the end of modal config
  -->
 
+
+
             </div>
+
           </div>
+
+
+<div class="col d-none d-sm-block" >
+  <div>
+    <img src="img/hero-area.gif" style="height:550px;margin-top: 100px;margin-right:-80px; width: 830px;"/ >
+  </div>
+</div>
+
         </div>
       </div>
+
+
+<div class=" container d-block d-sm-none "  >
+  <div class="hero-image">
+    <div class="hero-text">
+      <h1 style="font-size:50px">Freeing Returns</h1>
+      <h3>free Yourself Today</h3>
+      <button>learn More</button>
+    </div>
+  </div>
+</div>
     </header>
     <!-- Header Section End -->
+
+
+
 
     <!-- Services Section Start -->
     <section id="consumeroverview" class="section">
@@ -186,9 +227,13 @@ the end of modal config
               <h4>Pre-Schedule Your Return</h4>
               <p>Use your phone to process your return and then book your drop-off time with the store.  Your return is pre-scheduled and you skip the lines to drop off your items or schedule to have them picked up from a location you designate.</p>
             </div>
+
           </div>
+
         </div>
+
       </div>
+
     </section>
     <!-- Services Section End -->
 
@@ -247,82 +292,38 @@ the end of modal config
     </section>
     <!-- Features Section End -->
 
+
+
     <!-- Portfolio Section -->
     <section id="app" class="section">
       <!-- Container Starts -->
       <div class="container">
         <div class="section-header">
-          <h2 class="section-title wow fadeInLeft">Our App</h2>
-          </div>
-        <div class="row">
-          <div class="col-md-12">
-          </div>
+          <h2 class="section-title wow fadeInLeft">Lets Look At Some Statistics </h2>
 
-          <!-- Portfolio Recent Projects -->
-          <div id="portfolio" class="row wow lightSpeedIn">
-            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix development print">
-              <div class="portfolio-item">
-                <div class="shot-item">
-                  <img src="img/portfolio/img1.jpg" alt="" />
-                  <a class="overlay lightbox" href="img/portfolio/img1.jpg">
-                    <i class="lnr lnr-eye item-icon"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix design print">
-              <div class="portfolio-item">
-                <div class="shot-item">
-                  <img src="img/portfolio/img2.jpg" alt="" />
-                  <a class="overlay lightbox" href="img/portfolio/img2.jpg">
-                    <i class="lnr lnr-eye item-icon"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix development">
-              <div class="portfolio-item">
-                <div class="shot-item">
-                  <img src="img/portfolio/img3.jpg" alt="" />
-                  <a class="overlay lightbox" href="img/portfolio/img3.jpg">
-                    <i class="lnr lnr-eye item-icon"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix development design">
-              <div class="portfolio-item">
-                <div class="shot-item">
-                  <img src="img/portfolio/img4.jpg" alt="" />
-                  <a class="overlay lightbox" href="img/portfolio/img4.jpg">
-                    <i class="lnr lnr-eye item-icon"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix development">
-              <div class="portfolio-item">
-                <div class="shot-item">
-                  <img src="img/portfolio/img5.jpg" alt="" />
-                  <a class="overlay lightbox" href="img/portfolio/img5.jpg">
-                    <i class="lnr lnr-eye item-icon"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mix print design">
-              <div class="portfolio-item">
-                <div class="shot-item">
-                  <img src="img/portfolio/img6.jpg" alt="" />
-                  <a class="overlay lightbox" href="img/portfolio/img6.jpg">
-                    <i class="lnr lnr-eye item-icon"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
           </div>
-        </div>
+        <div class="row justify-content-md-center" style="margin-top:-40px">
+          <p class="section-title wow fadeInLeft">
+            Freeing Returns is a proven solution to returns fraud, which is a huge potential cost to retailers, Big and Small.
+          </p>
+
       </div>
+
+      <div class="progress fadeInLeft" style="height: 50px; margin-bottom: 50px; margin-top: 80px ">
+
+  <div class="progress-bar fadeInLeft" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="25" aria-valuemax="100">2007 - $10.5 Billion in Losses</div>
+</div>
+
+<div class="progress fadeInLeft" style="height: 50px; margin-bottom: 50px ">
+
+<div class="progress-bar fadeInLeft" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="50" aria-valuemax="100">2010 - $13.9 Billion in Losses</div>
+</div>
+
+<div class="progress fadeInLeft" style="height: 50px; margin-bottom: 50px ">
+<div class="progress-bar fadeInLeft" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+2015 - $15.9 Billion in Losses</div>
+</div>
+    </div>
       <!-- Container Ends -->
     </section>
     <!-- Portfolio Section Ends -->
@@ -466,23 +467,35 @@ the end of modal config
         <div class="centerParagraph wow fadeInLeft" data-wow-duration="1000ms" data-wow-delay="500ms">
 
           <p class="lead">
-            ATLANTA – September 20, 2017 – Freeing Returns announced today that it has been selected to present at Venture Atlanta 2017, the Southeast’s premier event for connecting technology innovation and investment capital. The 10	th annual Venture Atlanta will be held October 11-12 at the College Football Hall of Fame in Atlanta and will feature close to 150 funds from across the country. With more than 900 investors, tech entrepreneurs and executives anticipated to be in attendance, this year’s Venture Atlanta is once again lining up to be a sold-out event.
+            <a href="https://hypepotamus.com/companies/freeing-returns/" target="_blank">HYPEPOTAMUS ARTICLE</a> – April 14, 2018 – Fraudulent returns cost big box retailers a large chunk of money every year — a recent study found that retailers lose more than $9 billion from fraudulent returns a year. Just from last holiday season, retailers estimated that more than 5 percent of holiday returns are expected to be fraudulent.
 
-      Adding to the Venture Atlanta excitement are Mark Cuban, chairman and CEO of AXS TV and one of the “sharks” on ABC’s hit show, Shark Tank, and Ernie Garcia, CEO of Carvana, who will deliver keynote presentations.
+When a consumer makes a return, the retailer may ask for a name and contact information as a way to keep track of the return. However, right now, the retailer has no efficient way to gather that data and spot fraudulent returns in time.
 
-      “These types of opportunities are vital to our success, and we are honored to be one of the companies selected to present at the conference, said Barbara Jones, founder/ceo of Freeing Returns. We know that Venture Atlanta has really catapulted several startups here in Atlanta, so we are excited to introduce Freeing Returns to this audience to really drive awareness and build momentum in the retail and technology space.”
+With a background in retail IT and point of sale applications, entrepreneur Barbara Jones saw this problem firsthand in her work with retail enterprises through her consultancy, Lillii RNB. Her solution, Freeing Returns, originally came about as a hackathon idea at the 2015 ATDC/Worldpay Fintech pitch competition.
 
-      Freeing Returns was chosen as one of 35 companies from a large pool of applicants that represent the region’s most innovative tech businesses. The Freeing Returns team is developing a game-changing returns platform for retailers that will significantly reduce fraudulent returns while streamlining the returns process, eliminating receipts and improving the overall customer experience.
+The idea ended up taking the Best in Show award. The startup has grown through the female entrepreneurship program LaunchPad2x and is now part of the pre-accelerator program It Takes a Village at the Atlanta Tech Village.
 
-      “Through the years, Venture Atlanta has earned a reputation for consistently identifying tomorrow’s cutting-edge technologies while helping to launch over 380 companies and secure over $2 billion in funding,” said Allyson Eman, executive director of Venture Atlanta. “This year’sevent marks our 10th anniversary and includes the strongest and largest roster yet of both early and venture-stage companies—showcasing the depth, breadth and opportunity within the region’s technology community.”
+“We wanted to mobile-based returns to make it easy for customers to be able to return their items back to the store,” says Jones. “At the same time, make sure that on the back-end, we’re protecting the retailer against fraud.”
 
-      During the two-day event, presenting companies and conference attendees will engage with regional as well as national venture capitalists, investors and other key players in the current technology ecosystem. The conference results in funding, national investor exposure, invaluable relationship building and mentoring by successful technology executives. The conference will also, for the first time, include 16 Startup Showcase companies that will share their plans and vision for the future as “companies to watch.”
+The platform provides a solution to tackle those billion-dollar losses that retailers experience annually due to fraudulent returns — an issue that now includes organized retailer crime rings, according to Jones. “Often by the time the retailer finds out, it’s too late. The individual or group has already stolen millions and has moved on to the next mark,” says Jones.
 
-      To learn more about Freeing Returns, visit freeingreturns.com. For additional information about Venture Atlanta, to register for the event or to view the conference schedule, please visit www.ventureatlanta.org.
+After validating her idea, Jones decided to move full-speed ahead. Thanks to her previous relationships with retailers, she was able to tap into those connections and start building a viable MVP that would address fraud issues. They also interviewed 100+ consumers to see what their pain points were when returning merchandise.
 
+“The businesses go hand in hand,” says Jones. “We’re doing our customer discovery by talking to our consultancy retailer clients and vendors in the space about their current fraud issues. We’re building the platform to focus solely on those return issues.”
 
-      About Venture Atlanta
-      Venture Atlanta, Georgia's technology innovation event, is where the region’s most promising tech companies meet the country's top-tier investors. As the South's largest investor showcase helping launch more than 380 companies and raise over $2 billion in funding to date, Venture Atlanta connects local entrepreneurs with local and national venture capitalists, bankers, angel investors and others in the technology ecosystem who can help them raise the capital they needto grow their businesses. The annual nonprofit event is a collaboration of three leading Georgia business organizations: Atlanta CEO Council, Metro Atlanta Chamber and the Technology Association of Georgia (TAG). For more information, visit www.ventureatlanta.org. For updates, join us on LinkedIn, follow us on Twitter, and visit our blog.
+It all comes down to tracking the return data, says Jones. Once the retailer syncs up with Freeing Returns’ platform, they are able to keep track of trends and patterns over time, and signal which customer could potentially abuse the return policy. On the consumer side, customers can return their merchandise through the app versus standing in long lines at the store.
+
+Most of the fraudulent issues occur through gift cards, store credit, and when no receipt is available when returning an item.
+
+“You have to start at the top of the sale and be able to track your sale so when someone is bringing something back, even if you don’t have the receipt, you should still be able to find that transaction,” says Jones. “That’s what we’re introducing with this platform — gathering all of the sales data so we can pinpoint what should be coming back based on what was sold.”
+
+Currently they are tackling the mid-market and smaller retailer to create a proven record to approach big box retailers at a later time. The revenue model is set up as SaaS with a 2.5 percent recovery fee based on any detected fraud.
+
+“For those businesses that can’t afford fancy POS systems or afford fraud protection, we pivoted to smaller tier 2, tier 3 retailers,” says Jones. “We’ve found our niche in these smaller businesses since they don’t have robust systems available. We have an Ohio-based early adopter as well as a prospective Atlanta-based retailer.”
+
+While Jones and her team pitched at 2017 Venture Atlanta, they are continuing to bootstrapp for the time being and self-funding through her second business until they are ready to expand the team.
+
+Up next, the Freeing Returns team is working on a partnership with an ATDC one-day shipping startup to provide pick up via their app for customers to return their items versus dropping by the store.
           </p>
         </div>
         </div>
@@ -603,6 +616,14 @@ the end of modal config
     <script src="js/form-validator.min.js"></script>
     <script src="js/contact-form-script.js"></script>
     <script src="js/main.js"></script>
+    <!-- Start of LiveChat (www.livechatinc.com) code -->
+    <script>
+        window.__lc = window.__lc || {};
+        window.__lc.license = 11943030;
+        ;(function(n,t,c){function i(n){return e._h?e._h.apply(null,n):e._q.push(n)}var e={_q:[],_h:null,_v:"2.0",on:function(){i(["on",c.call(arguments)])},once:function(){i(["once",c.call(arguments)])},off:function(){i(["off",c.call(arguments)])},get:function(){if(!e._h)throw new Error("[LiveChatWidget] You can't use getters before load.");return i(["get",c.call(arguments)])},call:function(){i(["call",c.call(arguments)])},init:function(){var n=t.createElement("script");n.async=!0,n.type="text/javascript",n.src="https://cdn.livechatinc.com/tracking.js",t.head.appendChild(n)}};!n.__lc.asyncInit&&e.init(),n.LiveChatWidget=n.LiveChatWidget||e}(window,document,[].slice))
+    </script>
+    <noscript><a href="https://www.livechatinc.com/chat-with/11943030/" rel="nofollow">Chat with us</a>, powered by <a href="https://www.livechatinc.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a></noscript>
+    <!-- End of LiveChat code -->
 
   </body>
 </html>

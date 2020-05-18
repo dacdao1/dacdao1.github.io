@@ -27,7 +27,18 @@
   $('#myModal').on('hide.bs.modal', function (e) {
       // a poor man's stop video
       $("#video").attr('src',$videoSrc);
+
   })
+
+  $(document).ready(function(){
+    $("#scheduleDemo").click(function(){
+      $("html, body").animate({
+              scrollTop: $(
+                'html, body').get(0).scrollHeight
+          }, 5000);
+    });
+  });
+
 
 
   // Sticky Nav

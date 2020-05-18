@@ -362,13 +362,14 @@ button:focus {
    3. Hero Area
    ========================================================================== */
 
-#hero-area {
+/* #hero-area {
   background: url(../img/hero-area.gif) fixed no-repeat;
-  background-size: cover;
+  background-size: initial;
   overflow: hidden;
   position: relative;
 
-}
+} */
+
 
 #hero-area .overlay {
   position: absolute;
@@ -381,19 +382,20 @@ button:focus {
 }
 
 #hero-area .contents {
-  padding: 400px 0 100px;
+  padding: 250px 0 200px;
 }
 
 #hero-area .contents h1 {
-  color: #fff;
+  color: grey;
   font-size: 42px;
   font-weight: 700;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
+  margin-top: -10px;
 }
 
 #hero-area .contents p {
   font-size: 14px;
-  color: #fff;
+  color: grey;
   font-weight: 400;
   line-height: 30px;
   letter-spacing: 0.5px;
@@ -442,12 +444,24 @@ button:focus {
   color:#fff;
   opacity:1;
 }
+
+.demo-modal {
+  position:absolute;
+  left:250px;
+  bottom:-80px;
+  z-index:999;
+  font-size:2rem;
+  font-weight: normal;
+  color: #0AA8ED;
+  opacity:1;
+}
 /* ==========================================================================
    4. Navbar Style
    ========================================================================== */
 .navbar-brand {
   position: relative;
   padding: 0px;
+
 }
 
 .top-nav-collapse {
@@ -488,7 +502,7 @@ button:focus {
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
-  color: #fff;
+  color: blue;
   padding: 0 22px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -1257,4 +1271,33 @@ footer {
 
 .copyright p a:hover {
   color: #0AA8ED;
+}
+
+
+
+.hero-image {
+  background-image: url("../img/img1.jpg");
+  width: 100%;
+ height: 400px;
+
+
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+margin-top: 100px;
+margin-bottom: 100px;
+ bottom: 8px;
+ right: 16px;
+ z-index: -1;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  margin-top:100px;
+  margin-bottom:100px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
 }
