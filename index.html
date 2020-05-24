@@ -533,22 +533,25 @@ Up next, the Freeing Returns team is working on a partnership with an ATDC one-d
             </div>
             <div class="col-lg-6 col-sm-6 col-xs-12">
               <div class="contact-block">
-                <form id="contactForm" class="contact-form">
+                <form role="form" id="contactForm" class="contact-form" data-toggle="validator">
                   <div class="row">
                     <div class="col-md-12">
                       <div class="form-group">
+                        <label for="name">Name</label>
                         <input type="text" name="name" id="name" class="form-control" placeholder="Your Name" required data-error="Please enter your name">
                         <div class="help-block with-errors"></div>
                       </div>
                     </div>
                     <div class="col-md-12">
                       <div class="form-group">
+<label for="email">Email</label>
                         <input type="email" name="email" id="email" class="form-control" placeholder="Your Email" required data-error="Please enter your Email address">
                         <div class="help-block with-errors"></div>
                       </div>
                     </div>
                     <div class="col-md-12">
                       <div class="form-group">
+                        <label for="message">Message</label>
                         <textarea name="message" class="form-control" id="message" placeholder="Your Message" rows="8" data-error="Write your message" required></textarea>
                         <div class="help-block with-errors"></div>
                       </div>
@@ -623,7 +626,10 @@ Up next, the Freeing Returns team is working on a partnership with an ATDC one-d
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.js"></script>
     <script src="js/jquery-min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -653,9 +659,6 @@ Up next, the Freeing Returns team is working on a partnership with an ATDC one-d
     </script>
     <noscript><a href="https://www.livechatinc.com/chat-with/11943030/" rel="nofollow">Chat with us</a>, powered by <a href="https://www.livechatinc.com/?welcome" rel="noopener nofollow" target="_blank">LiveChat</a></noscript>
     <!-- End of LiveChat code -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
 
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.js"></script>
   </body>
 </html>
