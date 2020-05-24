@@ -7,11 +7,11 @@
     <meta name="keywords" content="Bootstrap, Parallax, Template, Registration, Landing">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="author" content="Grayrids">
-    <title>Freeing Returns</title>
+    <title>Freeing | Returns</title>
 
     <!-- Bootstrap CSS -->
     <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
-
+    <link rel="icon" type="image/png" href="img/logo.png" sizes="16x16">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -533,7 +533,7 @@ Up next, the Freeing Returns team is working on a partnership with an ATDC one-d
             </div>
             <div class="col-lg-6 col-sm-6 col-xs-12">
               <div class="contact-block">
-                <form  id="contactForm" class="contact-form" action="form-process.php" method="post">
+                <form  id="contactForm" class="contact-form" action="POST" data-netlify="true">
                   <div class="row">
                     <div class="col-md-12">
                       <div class="form-group">
@@ -555,6 +555,11 @@ Up next, the Freeing Returns team is working on a partnership with an ATDC one-d
                         <textarea name="message" class="form-control" id="message" placeholder="Your Message" rows="8" data-error="Write your message" required></textarea>
                         <div class="help-block with-errors"></div>
                       </div>
+
+                        <div data-netlify-recaptcha>
+
+                        </div>
+
                       <div class="submit-button text-center">
                         <button class="btn btn-common" id="submit" type="submit" name="submit">Send Message</button>
                         <div id="msgSubmit" class="h3 text-center hidden"></div>
@@ -626,8 +631,7 @@ Up next, the Freeing Returns team is working on a partnership with an ATDC one-d
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.js"></script>
+
     <script src="js/jquery-min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>

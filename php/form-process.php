@@ -1,5 +1,12 @@
 <?php
 
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
+use PHPMailer\PHPMailer\Exception;
+
+require '/home/nctests/public_html/PHPMailer-master/src/Exception.php';
+require '/home/nctests/public_html/PHPMailer-master/src/PHPMailer.php';
+require '/home/nctests/public_html/PHPMailer-master/src/SMTP.php';
 $errorMSG = "";
 
 // NAME
