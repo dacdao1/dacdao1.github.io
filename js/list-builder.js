@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    var delay = 5000; // milliseconds
+    var delay = 6000; // milliseconds
     var cookie_expire = 0; // days
 
     var cookie = localStorage.getItem("list-builder");
@@ -19,7 +19,7 @@ $(document).ready(function() {
                 url: $("#popup-form").attr("action"),
                 data: $("#popup-form").serialize(),
                 success: (data) => {
-                    $("#popup-box-content").html("<p style='text-align: center'>Thank you for subscribing to The Polyglot Developer newsletter!</p>");
+                    $("#popup-box-content").html("<p style='text-align: center'>Thank you for subscribing to Freeing Returns newsletter! We will contact you through our newsletter.</p>");
                 }
             });
         });
