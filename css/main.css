@@ -461,7 +461,7 @@ button:focus {
 .navbar-brand {
   position: relative;
   padding: 0px;
-
+  margin-left:-90px;
 }
 
 .top-nav-collapse {
@@ -566,7 +566,60 @@ button:focus {
     top: 0;
   }
   .navbar-brand img {
-    width: 70%;
+    height: 40px;
+    width: 40px;
+    margin-left: 60px;
+  }
+  #mobile-menu {
+    display: none;
+  }
+  .slicknav_menu {
+    display: block;
+  }
+  .slicknav_nav .active a {
+    background: #0AA8ED;
+    color: #fff;
+  }
+  .slicknav_nav a:hover, .slicknav_nav .active {
+    color: #0AA8ED;
+    background: #f8f9fa;
+  }
+  .slicknav_nav .dropdown li a.active {
+    background: #f8f9fa;
+    color: #0AA8ED;
+
+  }
+  .hero-image {
+    background-image: url("../img/1.png");
+
+
+    height:550px;
+    margin-top: -50px;
+    margin-left:-30px;
+    width: 830px;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .navbar-header {
+    width: 100%;
+  }
+  .navbar-brand {
+    position: absolute;
+    padding: 20px;
+    top: 0;
+  }
+  .navbar-brand img {
+    height: 40px;
+    width: 40px;
+    /* margin-right: -60px; */
+    margin-top:-8px;
+    margin-left: 80px;
   }
   #mobile-menu {
     display: none;
@@ -1276,14 +1329,18 @@ footer {
 
 /* mobile home page view */
 .hero-image {
-  background-image: url("../img/img1.jpg");
-  margin-top: 450px;
-  height: 300px;
+  background-image: url("../img/1.png");
+  margin-top: 50px;
+
+  height:550px;
+  margin-top: 100px;
+  margin-left:-60px;
+  width: 830px;
   background-position: bottom right;
   background-repeat: no-repeat;
   background-size: contain;
   position: relative;
-  z
+
 }
 
 .hero-text {
@@ -1292,6 +1349,15 @@ footer {
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
+  color:#0AA8ED;
+}
+
+.hero-text-mobile {
+  text-align: justify;
+  position: relative;
+  margin-top: 100px;
+  /* left: 50%; */
+  transform: translate(0%, 100%);
   color:#0AA8ED;
 }
 
@@ -1370,4 +1436,22 @@ footer {
 #popup-box button {
     padding: 10px;
     border: 1px solid #333;
+}
+
+/* video-carousel for why choose us videos */
+
+#carouselExampleControls{
+  width: 50%;
+  margin: 30px auto;
+}
+.jumbotron{
+  background: #fff;
+}
+
+.carousel-caption{
+  opacity:0;
+  transition:500ms ease-in-out;
+}
+.carousel-item:hover .carousel-caption{
+  opacity:1;
 }

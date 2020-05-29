@@ -2,6 +2,9 @@
 
   "use strict";
 
+
+
+
   /// modal video player
 
   var $videoSrc;
@@ -205,6 +208,29 @@
    ========================================================================== */
   $('#loader').fadeOut();
 
+  $(document).ready(function () {
+  	$('#uiSlider').carousel('pause'); // stop carousel autoplay
 
+
+    // check next slide transition started
+  	$('#uiSlider').on('slide.bs.carousel', function () {
+  		$('#uiSlider video').each(function () {
+  		  this.pause(); // pause all videos inside carousel
+  			this.currentTime = 0; // reset video timing to zero
+  		});
+  	});
+
+    // play active carousel once carousel transition completed
+  	$('#uiSlider').on('slid.bs.carousel', function () {
+  	  if($('#uiSlider .active').find('video').length > 0){
+  		  $('#uiSlider .active').find('video')[0].play();
+  		} else {
+        // if no video found in carousel item move current slider after five seconds
+  		  setTimeout(function(){
+  			  $('#uiSlider').carousel('next');
+  			}, 5000);
+  		}
+  	});
+  });
 
 }(jQuery));
