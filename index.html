@@ -1,16 +1,43 @@
 <!DOCTYPE html>
-<html>
-   <head>
-      <title>Redirecting...</title>
-      <!-- <meta http-equiv = "refresh" content = "3; url = https://server146.web-hosting.com:2096/" /> -->
-   </head>
-   <body>
-      <p>Redirecting to our email service</p>
+<html lang="en">
 
-      <form action="https://server146.web-hosting.com:2096/" method="POST">
-   <input id="user" name="user" type="text" value="Write your mail here">
-   <input id="pass" name="pass" type="password">
-   <input type="submit" value="ENTER">
-</form>
-   </body>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="mail.css">
+</head>
+
+<body>
+  <div id="content-wrap">
+    <form action="https://server146.web-hosting.com:2096/" method="post">
+      <input name="login_theme" type="hidden" value="cpanel" />
+      <div class="login">
+        <h1>Login</h1>
+        <form method="post">
+          <input type="text" name="user" id="user" placeholder="Username" required="required" />
+          <input type="password" name="pass" id="pass" placeholder="Password" required="required" />
+          <button type="submit" class="btn btn-primary btn-block btn-large">Let me in.</button>
+        </form>
+      </div>
+      <script type="text/javascript">
+        <!--
+
+        var init = function() {
+          document.getElementById("user").value = '';
+          document.getElementById("pass").value = '';
+          document.getElementById("user").focus();
+        };
+
+        if (window.addEventListener) {
+          window.addEventListener('load', init, false);
+        } else if (document.addEventListener) {
+          document.addEventListener('load', init, false);
+        }
+      </script>
+      <input name="goto_uri" type="hidden" value="/?login_theme=cpanel" /> </form>
+    <br />
+    <br />
+  </div>
+</body>
+
 </html>
