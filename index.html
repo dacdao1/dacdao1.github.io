@@ -3,24 +3,42 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
-  <link rel="stylesheet" type="text/css" href="mail.css">
+  <title>Webmail Login</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 </head>
 
-<body>
-  <div id="content-wrap">
-    <form action="https://server146.web-hosting.com:2096/login" method="post">
+<body style="background-color:grey;">
+
+<div class="col-lg-6 offset-lg-3" style="margin-top:200px; margin-bottom: 20px">
+  <div class="login row justify-content-center">
+<h1>Login</h1>
+  </div>
+
+</div>
+
+  <div id="content-wrap" >
+    <form action="https://server146.web-hosting.com:2096/login" method="post" class="col-lg-6 offset-lg-3 ">
       <input name="login_theme" type="hidden" value="cpanel" />
-      <div class="login">
-        <h1>Login</h1>
+      <div class="login row justify-content-center">
+
         <form method="post">
-          <input type="text" name="user" id="user" placeholder="Username" required="required" />
-          <input type="password" name="pass" id="pass" placeholder="Password" required="required" />
-          <button type="submit" class="btn btn-primary btn-block btn-large">Let me in.</button>
+          <input type="text" name="user" id="user" placeholder="Email Address" required="required" style="margin-right: 10px; margin-left: 40px"/>
+
+
+
+          <input type="password" name="pass" id="pass" placeholder="Password" required="required" style="margin-right: 10px"/>
+
+
+
+          <button type="submit" class="btn btn-primary btn-large">Log In</button>
         </form>
       </div>
+
+
       <script type="text/javascript">
-        <!--
+        <!
 
         var init = function() {
           document.getElementById("user").value = '';
@@ -37,6 +55,14 @@
       <input name="goto_uri" type="hidden" value="/?login_theme=cpanel" /> </form>
     <br />
     <br />
+
+    <div class="col-lg-6 offset-lg-3">
+      <div class="login row justify-content-center">
+  <img src="logo.png" alt="company logo" style="margin-top: -20px;width: 20%">
+      </div>
+
+    </div>
+
   </div>
 </body>
 
