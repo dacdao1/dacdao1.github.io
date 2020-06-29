@@ -21,8 +21,7 @@
 
 
 
-      [build]
-        publish = "public"
+    
 
       [[plugins]]
         package = "netlify-plugin-submit-sitemap"
