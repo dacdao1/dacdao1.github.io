@@ -1,6 +1,4 @@
 
-/***** Top content *****/
-
 .top-content { width: 100%; padding: 60px 0 120px 0; background-color: grey;}
 .top-content .carousel { box-shadow: 0 0 15px 0 #444; }
 .top-content .carousel-control-prev { left: -110px; border-bottom: 0; }
