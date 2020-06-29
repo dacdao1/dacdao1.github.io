@@ -30,7 +30,7 @@
       	[plugins.inputs]
 
       	# The base url of your site (optional, default = main URL set in Netlify)
-      	baseUrl = "https://example.com"
+      	baseUrl = "https://www.freeingreturns.com"
 
       	# Path to the sitemap URL (optional, default = /sitemap.xml)
       	sitemapPath = "/sitemap.xml"
@@ -42,25 +42,6 @@
       	]
 
 
-        # Config for the Netlify Build Plugin: netlify-plugin-minify-html
-[[plugins]]
-  package = "netlify-plugin-minify-html"
-
-  # Specify which deploy contexts we'll minify HTML in.
-  # Supports any Deploy Contexts available in Netlify.
-  # https://docs.netlify.com/site-deploys/overview/#deploy-contexts
-  [plugins.inputs]
-    contexts = [
-      'production',
-      'branch-deploy',
-      'deploy-preview'
-    ]
-
-  # Optionally, override the default options for the minification
-  # https://github.com/kangax/html-minifier#options-quick-reference
-  [plugins.inputs.minifierOptions]
-    removeComments = true
-    collapseInlineTagWhitespace = false
 
 
     [[plugins]]
