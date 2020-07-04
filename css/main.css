@@ -332,43 +332,13 @@ button:focus {
   }
 }
 
-/* ==========================================================================
-  -2.5 Scroll To Up
-   ========================================================================== */
-.back-to-top {
-  display: none;
-  position: fixed;
-  bottom: 18px;
-  right: 15px;
-}
 
-.back-to-top i {
-  display: block;
-  width: 36px;
-  height: 36px;
-  line-height: 36px;
-  color: #fff;
-  font-size: 14px;
-  text-align: center;
-  border-radius: 4px;
-  background-color: #0AA8ED;
-  -webkit-transition: all 0.2s linear;
-  -moz-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
-  transition: all 0.2s linear;
-}
 
 /* ==========================================================================
    3. Hero Area
    ========================================================================== */
 
-/* #hero-area {
-  background: url(../img/hero-area.gif) fixed no-repeat;
-  background-size: initial;
-  overflow: hidden;
-  position: relative;
 
-} */
 
 
 #hero-area .overlay {
@@ -467,7 +437,7 @@ button:focus {
 
 .top-nav-collapse {
   background: #fff;
-  z-index: 999999;
+  z-index: 999998;
   top: 0px !important;
   padding: 0;
   box-shadow: 0px 3px 6px 3px rgba(0, 0, 0, 0.06);
@@ -758,59 +728,6 @@ button:focus {
   bottom: -120px;
 }
 
-/* ==========================================================================
-  7. Video promo Style
-   ========================================================================== */
-.video-promo {
-  background: #0AA8ED;
-  color: #fff;
-  overflow: hidden;
-  position: relative;
-}
-
-.video-promo .video-promo-content {
-  color: #fff;
-}
-
-.video-promo .video-promo-content h2 {
-  color: #fff;
-  font-size: 30px;
-  text-transform: uppercase;
-  margin-bottom: 30px;
-}
-
-.video-promo .video-promo-content p {
-  margin-bottom: 30px;
-}
-
-.video-promo .video-promo-content .video-popup {
-  width: 80px;
-  height: 80px;
-  text-align: center;
-  border: 3px solid #fff;
-  color: #fff;
-  border-radius: 50%;
-  display: inline-block;
-  font-size: 30px;
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-}
-
-.video-promo .video-promo-content .video-popup i {
-  line-height: 72px;
-}
-
-.overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0px;
-  left: 0px;
-  background: #0AA8ED;
-  opacity: 0.9;
-  filter: alpha(opacity=90);
-}
 
 /* ==========================================================================
   8. Portfolio Section
@@ -916,139 +833,10 @@ button:focus {
   opacity: 1;
 }
 
-/* ==========================================================================
-	9. Pricing Table
-	========================================================================== */
-.aboutcolor{
-  color: #0AA8ED;
-}
-  .centerParagraph{
-margin-top: 50px;
-margin-bottom: 200px;
 
-  }
-.pricing-table {
-  padding: 0px 0px 40px 0px;
-  margin: 0 auto;
-  margin-bottom: 5px;
-  border: transparent;
-  text-align: center;
-  background-color: #FFFFFF;
-  border: 1px solid #f1f1f1;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  transition: all 0.3s;
-}
 
-.pricing-table:hover {
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
-}
 
-.pricing-table .pricing-details h2 {
-  font-size: 26px;
-  font-weight: 700;
-  color: #333;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  background: #f1f1f1;
-  padding: 30px 0;
-}
 
-.pricing-table .pricing-details span {
-  display: inline-block;
-  font-size: 48px;
-  font-weight: 400;
-  color: #0AA8ED;
-  margin-bottom: 100px;
-}
-
-.pricing-table .pricing-details ul {
-  margin-bottom: 100px;
-}
-
-.pricing-table .pricing-details ul li {
-  padding: 10px;
-  font-size: 15px;
-  border-bottom: 1px dotted #f1f1f1;
-}
-
-.table-left {
-  margin-top: 100px;
-}
-
-/* ==========================================================================
- 10. Counter Section Style
- ========================================================================== */
-.counters {
-  background: url(../img/counter.jpg) fixed;
-  position: relative;
-}
-
-.counters .facts-item {
-  text-align: center;
-  color: #fff;
-}
-
-.counters .facts-item .icon {
-  margin-bottom: 30px;
-}
-
-.counters .facts-item .icon i {
-  font-size: 50px;
-  color: #fff;
-}
-
-.counters .facts-item .fact-count h3 {
-  font-size: 35px;
-  color: #fff;
-  margin-bottom: 15px;
-}
-
-.counters .facts-item .fact-count h4 {
-  font-size: 20px;
-  font-weight: 400;
-  color: #fff;
-}
-
-/* ==========================================================================
-11. Testimonial Section Style
- ========================================================================== */
-#testimonial {
-  background: url(../img/testimonial-bg.jpg) fixed no-repeat;
-  background-size: cover;
-  color: #fff;
-  overflow: hidden;
-  position: relative;
-}
-
-.testimonial-item {
-  text-align: center;
-}
-
-.testimonial-item img {
-  width: 80px;
-  border: 3px solid #fff;
-  height: 80px;
-  border-radius: 50%;
-}
-
-.testimonial-item .testimonial-text h3 {
-  font-size: 15px;
-  font-weight: 700;
-}
-
-.testimonial-item .testimonial-text span {
-  font-size: 14px;
-  color: #999;
-}
-
-.testimonial-item .testimonial-text p {
-  font-size: 14px;
-  font-weight: 400;
-  padding: 36px 10px 30px 10px;
-  margin: 0;
-  line-height: 30px;
-}
 
 .owl-theme .owl-controls .owl-page span {
   background: #0AA8ED;
@@ -1145,75 +933,7 @@ margin-bottom: 200px;
   color: #fff;
 }
 
-/* ==========================================================================
-  13. Blog
-   ========================================================================== */
-#blog .blog-item-wrapper {
-  background: #fff;
-  border-radius: 0px;
-  -webkit-transition: transform 0.2s linear, -webkit-box-shadow 0.2s linear;
-  -moz-transition: transform 0.2s linear, -moz-box-shadow 0.2s linear;
-  transition: transform 0.2s linear, box-shadow 0.2s linear;
-}
 
-#blog .blog-item-wrapper:hover .blog-item-img:before {
-  opacity: 1;
-  height: 100%;
-  width: 100%;
-}
-
-#blog .blog-item-img {
-  position: relative;
-}
-
-#blog .blog-item-img img {
-  width: 100%;
-}
-
-#blog .blog-item-text {
-  padding: 20px 0;
-}
-
-#blog .blog-item-text h3 {
-  line-height: 26px;
-  font-size: 18px;
-  font-weight: 700;
-  margin-bottom: 10px;
-}
-
-#blog .blog-item-text h3 a {
-  color: #333;
-}
-
-#blog .blog-item-text h3 a:hover {
-  color: #0AA8ED;
-}
-
-#blog .blog-item-text p {
-  line-height: 25px;
-  margin-bottom: 20px;
-}
-
-.meta-tags {
-  margin-bottom: 20px;
-}
-
-.meta-tags span {
-  color: #999;
-  margin-right: 10px;
-}
-
-.meta-tags span i {
-  margin-right: 5px;
-}
-
-.meta-tags span a {
-  color: #999;
-}
-
-.meta-tags span a:hover {
-  color: #0AA8ED;
-}
 
 /* ==========================================================================
   14. Contact Us
@@ -1445,126 +1165,3 @@ footer {
 }
 
 /* Covid 19 announcement bar */
-
-/*
-Hello Bar
- */
-#hellobar-bar {
-  font-family: 'Poppins', sans-serif;
-  width: 100%;
-  margin: 0;
-  height: 100px;
-  display: table;
-  font-size: 100px;
-  font-weight: 600;
-  padding: .33em .5em;
-  -webkit-font-smoothing: antialiased;
-  color: black;
-  position: fixed;
-bottom: 480px;
-  background-color: rgb(255, 126, 0);
-
-
-}
-#hellobar-bar.regular {
-  height: 90px;
-  font-size: 25px;
-  padding: .2em .5em;
-}
-.hb-content-wrapper {
-  text-align: center;
-  text-align: center;
-  position: relative;
-  display: table-cell;
-  vertical-align: middle;
-}
-.hb-content-wrapper p {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-/*
-Text
- */
-.hb-text-wrapper {
-  margin-right: .67em;
-  display: inline-block;
-  line-height: 1.3;
-}
-.hb-text-wrapper .hb-headline-text {
-  font-size: 1em;
-  display: inline-block;
-  vertical-align: middle;
-}
-
-/*
-Button
- */
-#hellobar-bar .hb-cta {
-  display: inline-block;
-  vertical-align: middle;
-  margin: 5px 0;
-  color: #FFFFFF;
-  background-color: #000000;
-  border: 1px solid #000000;
-}
-.hb-cta-button {
-  opacity: 1;
-  color: #fff;
-  display: block;
-  cursor: pointer;
-  line-height: 1.5;
-  max-width: 22.5em;
-  text-align: center;
-  position: relative;
-  border-radius: 3px;
-  white-space: nowrap;
-  margin: 1.75em auto 0;
-  text-decoration: none;
-  padding: 0;
-  overflow: hidden;
-}
-.hb-cta-button .hb-text-holder {
-  border-radius: inherit;
-  padding: 5px 15px;
-}
-
-.hb-cta-button:active, .hb-cta-button:hover {
-    /*color: #fff !important;*/
-    /*background-color: #ee6e73 !important;*/
-    text-decoration:underline;
-}
-
-/*
-Close
- */
-.hb-close-wrapper {
-  display: table-cell;
-  width: 1.6em;
-}
-.hb-close-wrapper .icon-close {
-  font-size: 35px;
-  top: 25px;
-  right: 30px;
-  width: 15px;
-  height: 15px;
-  opacity: .7;
-  color: black;
-  cursor: pointer;
-  position: absolute;
-  text-align: center;
-  line-height: 100%;
-  z-index: 1000;
-  text-decoration: none;
-}
-.icon-close:hover {
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-  background-color: rgba(0,0,0,0.3);
-  color: #0582b6;
-  -webkit-transform: scale(1.5);
-	transform: scale(1.5);
-}
-.icon-close:active {
-  color: #0582b6;
-}
