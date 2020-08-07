@@ -1544,3 +1544,74 @@ footer {
 .tweet > .actions > .fa-heart:hover {
   color: #B33;
 }
+
+.logo-feature{
+  height: 150px;
+  width: 200px;
+  background-blend-mode: screen;
+  margin-top: 50px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.carousel-five-images{
+	position: relative;
+  top: 1em;
+  left: 25%;
+  /* Can be anything, but must be defined */
+}
+.carousel-five-images img {
+  width: 400px;
+  height: 400px;
+}
+.carousel-five-images .changing {
+	position:absolute;
+	opacity:0;
+	top:0;
+	left:0;
+}
+.carousel-five-images .two{
+	animation:animate-five-two 15s infinite forwards linear;
+}
+.carousel-five-images .three{
+	animation:animate-five-three 15s infinite forwards linear;
+}
+.carousel-five-images .four{
+	animation:animate-five-four 15s infinite forwards linear;
+}
+.carousel-five-images .five{
+	animation:animate-five-five 15s infinite forwards linear;
+}
+
+@keyframes animate-five-two
+{
+    0%	{opacity:0;}
+    15% {opacity:0;}
+    20% {opacity:1;}
+    90% {opacity:1;}
+    95% {opacity:0;}
+}
+@keyframes animate-five-three
+{
+    0% {opacity:0;}
+    35% {opacity:0;}
+    40% {opacity:1;}
+    90% {opacity:1;}
+    95% {opacity:0;}
+}
+@keyframes animate-five-four
+{
+    0% {opacity:0;}
+    55% {opacity:0;}
+    60% {opacity:1;}
+    90% {opacity:1;}
+    95% {opacity:0;}
+}
+@keyframes animate-five-five
+{
+    0% {opacity:0;}
+    75% {opacity:0;}
+    80% {opacity:1;}
+    95% {opacity:1;}
+    100% {opacity:0;}
+}
