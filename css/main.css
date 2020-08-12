@@ -1318,10 +1318,10 @@ footer {
 /* mobile home page view */
 .hero-image {
   background-image: url("../img/1.png");
-  margin-top: 50px;
+  margin-top: 170px;
 
   height:550px;
-  margin-top: 100px;
+
   margin-left:-60px;
   width: 830px;
   background-position: bottom right;
@@ -1557,7 +1557,7 @@ footer {
 .carousel-five-images{
 	position: relative;
   top: 4em;
-  left: 30%;
+  left: 20%;
   /* Can be anything, but must be defined */
 }
 .carousel-five-images img {
