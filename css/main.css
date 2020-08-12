@@ -1480,7 +1480,7 @@ footer {
 }
 
 .card.summary .domain {
-  color: #888;
+  color: black;
 }
 
 .tweets-container {
@@ -1522,11 +1522,11 @@ footer {
 }
 
 .tweet > .author > .username {
-  color: #888;
+  color: black;
 }
 
 .tweet > .actions > .fa {
-  color: #888;
+  color: black;
   cursor: pointer;
   font-size: 16px;
   margin-top: 12px;
@@ -1556,8 +1556,8 @@ footer {
 
 .carousel-five-images{
 	position: relative;
-  top: 1em;
-  left: 25%;
+  top: 4em;
+  left: 30%;
   /* Can be anything, but must be defined */
 }
 .carousel-five-images img {
@@ -1571,16 +1571,16 @@ footer {
 	left:0;
 }
 .carousel-five-images .two{
-	animation:animate-five-two 15s infinite forwards linear;
+	animation:animate-five-two 25s infinite forwards linear;
 }
 .carousel-five-images .three{
-	animation:animate-five-three 15s infinite forwards linear;
+	animation:animate-five-three 25s infinite forwards linear;
 }
 .carousel-five-images .four{
-	animation:animate-five-four 15s infinite forwards linear;
+	animation:animate-five-four 25s infinite forwards linear;
 }
 .carousel-five-images .five{
-	animation:animate-five-five 15s infinite forwards linear;
+	animation:animate-five-five 25s infinite forwards linear;
 }
 
 @keyframes animate-five-two
