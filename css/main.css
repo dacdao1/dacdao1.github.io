@@ -86,7 +86,7 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
 }
 
 .section-header .section-subtitle {
-  margin-top: 15px;
+  margin-top: -5px;
   color: #333;
   font-size: 14px;
   font-weight: 400;
@@ -332,13 +332,43 @@ button:focus {
   }
 }
 
+/* ==========================================================================
+  -2.5 Scroll To Up
+   ========================================================================== */
+.back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 18px;
+  right: 15px;
+}
 
+.back-to-top i {
+  display: block;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 4px;
+  background-color: #0AA8ED;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
 
 /* ==========================================================================
    3. Hero Area
    ========================================================================== */
 
+/* #hero-area {
+  background: url(../img/hero-area.gif) fixed no-repeat;
+  background-size: initial;
+  overflow: hidden;
+  position: relative;
 
+} */
 
 
 #hero-area .overlay {
@@ -728,6 +758,59 @@ button:focus {
   bottom: -120px;
 }
 
+/* ==========================================================================
+  7. Video promo Style
+   ========================================================================== */
+.video-promo {
+  background: #0AA8ED;
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+}
+
+.video-promo .video-promo-content {
+  color: #fff;
+}
+
+.video-promo .video-promo-content h2 {
+  color: #fff;
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.video-promo .video-promo-content p {
+  margin-bottom: 30px;
+}
+
+.video-promo .video-promo-content .video-popup {
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  border: 3px solid #fff;
+  color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 30px;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.video-promo .video-promo-content .video-popup i {
+  line-height: 72px;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background: #0AA8ED;
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+}
 
 /* ==========================================================================
   8. Portfolio Section
@@ -833,10 +916,139 @@ button:focus {
   opacity: 1;
 }
 
+/* ==========================================================================
+	9. Pricing Table
+	========================================================================== */
+.aboutcolor{
+  color: #0AA8ED;
+}
+  .centerParagraph{
+margin-top: 50px;
+margin-bottom: 200px;
 
+  }
+.pricing-table {
+  padding: 0px 0px 40px 0px;
+  margin: 0 auto;
+  margin-bottom: 5px;
+  border: transparent;
+  text-align: center;
+  background-color: #FFFFFF;
+  border: 1px solid #f1f1f1;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
 
+.pricing-table:hover {
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+}
 
+.pricing-table .pricing-details h2 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  background: #f1f1f1;
+  padding: 30px 0;
+}
 
+.pricing-table .pricing-details span {
+  display: inline-block;
+  font-size: 48px;
+  font-weight: 400;
+  color: #0AA8ED;
+  margin-bottom: 100px;
+}
+
+.pricing-table .pricing-details ul {
+  margin-bottom: 100px;
+}
+
+.pricing-table .pricing-details ul li {
+  padding: 10px;
+  font-size: 15px;
+  border-bottom: 1px dotted #f1f1f1;
+}
+
+.table-left {
+  margin-top: 100px;
+}
+
+/* ==========================================================================
+ 10. Counter Section Style
+ ========================================================================== */
+.counters {
+  background: url(../img/counter.jpg) fixed;
+  position: relative;
+}
+
+.counters .facts-item {
+  text-align: center;
+  color: #fff;
+}
+
+.counters .facts-item .icon {
+  margin-bottom: 30px;
+}
+
+.counters .facts-item .icon i {
+  font-size: 50px;
+  color: #fff;
+}
+
+.counters .facts-item .fact-count h3 {
+  font-size: 35px;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.counters .facts-item .fact-count h4 {
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+}
+
+/* ==========================================================================
+11. Testimonial Section Style
+ ========================================================================== */
+#testimonial {
+  background: url(../img/testimonial-bg.jpg) fixed no-repeat;
+  background-size: cover;
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+}
+
+.testimonial-item {
+  text-align: center;
+}
+
+.testimonial-item img {
+  width: 80px;
+  border: 3px solid #fff;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.testimonial-item .testimonial-text h3 {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.testimonial-item .testimonial-text span {
+  font-size: 14px;
+  color: #999;
+}
+
+.testimonial-item .testimonial-text p {
+  font-size: 14px;
+  font-weight: 400;
+  padding: 36px 10px 30px 10px;
+  margin: 0;
+  line-height: 30px;
+}
 
 .owl-theme .owl-controls .owl-page span {
   background: #0AA8ED;
@@ -933,7 +1145,75 @@ button:focus {
   color: #fff;
 }
 
+/* ==========================================================================
+  13. Blog
+   ========================================================================== */
+#blog .blog-item-wrapper {
+  background: #fff;
+  border-radius: 0px;
+  -webkit-transition: transform 0.2s linear, -webkit-box-shadow 0.2s linear;
+  -moz-transition: transform 0.2s linear, -moz-box-shadow 0.2s linear;
+  transition: transform 0.2s linear, box-shadow 0.2s linear;
+}
 
+#blog .blog-item-wrapper:hover .blog-item-img:before {
+  opacity: 1;
+  height: 100%;
+  width: 100%;
+}
+
+#blog .blog-item-img {
+  position: relative;
+}
+
+#blog .blog-item-img img {
+  width: 100%;
+}
+
+#blog .blog-item-text {
+  padding: 20px 0;
+}
+
+#blog .blog-item-text h3 {
+  line-height: 26px;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+#blog .blog-item-text h3 a {
+  color: #333;
+}
+
+#blog .blog-item-text h3 a:hover {
+  color: #0AA8ED;
+}
+
+#blog .blog-item-text p {
+  line-height: 25px;
+  margin-bottom: 20px;
+}
+
+.meta-tags {
+  margin-bottom: 20px;
+}
+
+.meta-tags span {
+  color: #999;
+  margin-right: 10px;
+}
+
+.meta-tags span i {
+  margin-right: 5px;
+}
+
+.meta-tags span a {
+  color: #999;
+}
+
+.meta-tags span a:hover {
+  color: #0AA8ED;
+}
 
 /* ==========================================================================
   14. Contact Us
@@ -1038,10 +1318,10 @@ footer {
 /* mobile home page view */
 .hero-image {
   background-image: url("../img/1.png");
-  margin-top: 50px;
+  margin-top: 170px;
 
   height:550px;
-  margin-top: 100px;
+
   margin-left:-60px;
   width: 830px;
   background-position: bottom right;
@@ -1164,4 +1444,185 @@ footer {
   opacity:1;
 }
 
-/* Covid 19 announcement bar */
+
+
+.card {
+  border: 1px solid #eee;
+  border-radius: 4px;
+  padding: 12px;
+}
+
+.card.summary {
+  padding: 0;
+}
+
+.card.summary > .background {
+  display: block;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.card.summary > .information {
+  color: #333;
+  border-top: 1px solid #eee;
+  padding: 8px 12px;
+}
+
+.card.summary > .information > .title {
+  font-weight: bold;
+}
+
+.card.summary > .information > div:not(:last-child) {
+  margin-bottom: 4px;
+}
+
+.card.summary .domain {
+  color: black;
+}
+
+.tweets-container {
+  margin: auto;
+  max-width: 600px;
+}
+
+.tweets-header {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: -1px;
+}
+
+.tweets-container > .tweet:last-child {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.tweet {
+  position: relative;
+  border-radius: 0;
+  padding-left: 72px;
+  margin-bottom: -1px;
+}
+
+.tweet > .author > .avatar {
+  position: absolute;
+  border-radius: 4px;
+  top: 12px;
+  left: 12px;
+  width: 48px;
+  height: 48px;
+}
+
+.tweet > .author > .name {
+  font-weight: bold;
+}
+
+.tweet > .author > .username {
+  color: black;
+}
+
+.tweet > .actions > .fa {
+  color: black;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 12px;
+  margin-right: 36px;
+}
+
+.tweet > .actions > .fa-reply:hover {
+  color: dodgerblue;
+}
+
+.tweet > .actions > .fa-retweet:hover {
+  color: limegreen;
+}
+
+.tweet > .actions > .fa-heart:hover {
+  color: #B33;
+}
+
+.logo-feature{
+  height: 150px;
+  width: 200px;
+  background-blend-mode: screen;
+  margin-top: 50px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.carousel-five-images{
+	position: relative;
+  top: 4em;
+  left: 30%;
+  /* Can be anything, but must be defined */
+}
+
+
+.carousel-five-images-mobile{
+	position: relative;
+  top: 4em;
+  left:5%;
+  /* Can be anything, but must be defined */
+}
+
+
+.carousel-five-images img {
+  width: 400px;
+  height: 400px;
+}
+.carousel-five-images .changing {
+	position:absolute;
+	opacity:0;
+	top:0;
+	left:0;
+}
+
+.carousel-five-images .two{
+	animation:animate-five-two 25s infinite forwards linear;
+}
+.carousel-five-images .three{
+	animation:animate-five-three 25s infinite forwards linear;
+}
+.carousel-five-images .four{
+	animation:animate-five-four 25s infinite forwards linear;
+}
+.carousel-five-images .five{
+	animation:animate-five-five 25s infinite forwards linear;
+}
+
+@keyframes animate-five-two
+{
+    0%	{opacity:0;}
+    15% {opacity:0;}
+    20% {opacity:1;}
+    90% {opacity:1;}
+    95% {opacity:0;}
+}
+@keyframes animate-five-three
+{
+    0% {opacity:0;}
+    35% {opacity:0;}
+    40% {opacity:1;}
+    90% {opacity:1;}
+    95% {opacity:0;}
+}
+@keyframes animate-five-four
+{
+    0% {opacity:0;}
+    55% {opacity:0;}
+    60% {opacity:1;}
+    90% {opacity:1;}
+    95% {opacity:0;}
+}
+@keyframes animate-five-five
+{
+    0% {opacity:0;}
+    75% {opacity:0;}
+    80% {opacity:1;}
+    95% {opacity:1;}
+    100% {opacity:0;}
+}
