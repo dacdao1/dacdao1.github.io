@@ -1626,3 +1626,13 @@ footer {
     95% {opacity:1;}
     100% {opacity:0;}
 }
+
+
+
+.dropdown-toggle::after {
+   transition: transform 0.15s linear;
+}
+
+.show.dropdown .dropdown-toggle::after {
+  transform: translateY(3px);
+}
