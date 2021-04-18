@@ -1,6 +1,6 @@
 # Freeingreturns.com main page
 
-**Please visit (www.freeingreturns.com) to view the current site.
+**Please visit <www.freeingreturns.com> to view the current site.**
 ---
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/93a6e0b5-c6f1-4151-8b7c-bd1967719f11/deploy-status)](https://app.netlify.com/sites/freeing-returns-landingpage/deploys)
